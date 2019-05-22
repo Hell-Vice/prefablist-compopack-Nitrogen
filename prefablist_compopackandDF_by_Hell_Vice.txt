@@ -26,7 +26,7 @@ abandoned_house_05,RESIDENTIALOLD,2,-5,26,22,30,houses
 abandoned_house_06,RESIDENTIALOLD,2,-1,30,17,31,houses
 abandoned_house_07,RESIDENTIALOLD,2,-1,34,18,29,houses
 abandoned_house_08,RESIDENTIALOLD,2,-10,28,19,34,houses
-apartment_adobe_red_5_flr,RESIDENTIALNEW;DOWNTOWN,2,0,45,36,37,citycenter;houses
+apartment_adobe_red_5_flr,RESIDENTIALNEW;DOWNTOWN,2,0,45,36,37,smalltown;houses
 apartment_brick_6_flr,RESIDENTIALNEW;DOWNTOWN,2,-7,55,61,57,citycenter;houses
 army_barracks_01,INDUSTRIAL,2,-1,44,11,43,alone;mountain
 army_camp_01,INDUSTRIAL,2,-3,53,22,57,alone;mountain
@@ -84,7 +84,7 @@ cabin_15,RESIDENTIALOLD,0,-3,40,19,48,alone;mountain
 //canyon_gift_shop,NAVONLY,0,-6,22,19,24,alone
 canyon_car_wreck,NONE,2,0,8,6,10,hillbillyjunk
 //canyon_mine,NavOnly,0,-55,64,69,44,mountain;unique 
-//doubled for balance
+
 carlot_01,COMMERCIAL,2,-1,46,16,43,downtown;smalltown;carlot
 carlot_02,COMMERCIAL,2,-1,42,21,44,downtown;smalltown;carlot
 cave_01,CAVEFLAT,2,-16,33,22,54,alone;mountain
@@ -126,18 +126,18 @@ factory_lg_02,INDUSTRIAL,2,-6,96,77,96,industrial
 fastfood_01,COMMERCIAL;DOWNTOWN,2,-1,41,13,42,smalltown;downtown
 fastfood_02,COMMERCIAL;DOWNTOWN,2,-1,47,27,58,smalltown;downtown
 fastfood_03,COMMERCIAL;DOWNTOWN,2,-1,46,14,59,smalltown;downtown
-fastfood_04,COMMERCIAL;DOWNTOWN,2,-1,37,18,55,smalltown
+fastfood_04,COMMERCIAL;DOWNTOWN,2,-1,37,18,55,smalltown;alone
 fire_station_01,DOWNTOWN;RESIDENTIALOLD,2,-1,42,13,43,smalltown;downtown
 fire_station_02,DOWNTOWN;RESIDENTIALNEW,2,-1,38,20,44,smalltown;downtown
 football_stadium,RESIDENTIALNEW,2,-1,173,44,138,smalltown
 funeral_home_01,COMMERCIAL;RESIDENTIALNEW,2,-1,40,25,44,smalltown
-garage_01,RESIDENTIALOLD,2,-1,13,9,37,downtown
-garage_02,RESIDENTIALOLD,2,-1,14,9,37,downtown
-garage_03,RESIDENTIALOLD,2,-1,15,10,37,downtown
-garage_04,RESIDENTIALOLD,2,-1,17,10,37,downtown
-garage_05,RESIDENTIALNEW,2,-1,19,11,37,downtown
-garage_06,RESIDENTIALNEW,2,-1,17,10,37,downtown
-garage_07,RESIDENTIALNEW,2,-1,19,11,37,downtown
+garage_01,RESIDENTIALOLD,2,-1,13,9,37,houses
+garage_02,RESIDENTIALOLD,2,-1,14,9,37,houses
+garage_03,RESIDENTIALOLD,2,-1,15,10,37,houses
+garage_04,RESIDENTIALOLD,2,-1,17,10,37,houses
+garage_05,RESIDENTIALNEW,2,-1,19,11,37,houses
+garage_06,RESIDENTIALNEW,2,-1,17,10,37,houses
+garage_07,RESIDENTIALNEW,2,-1,19,11,37,houses
 gas_station1,COMMERCIAL,2,-5,38,20,43,smalltown
 gas_station2,COMMERCIAL,2,-1,34,13,45,smalltown
 gas_station3,COMMERCIAL,2,-5,34,17,41,smalltown;downtown;carlot
@@ -337,7 +337,7 @@ ranger_station1,COMMERCIAL,3,0,19,14,19,alone;mountain
 //rock_form04,NONE,2,-1,
 //rock_form05,NONE,2,-1,
 
-//nice POI, but sawmill only works on SNOW!
+//nice POI, but sawmill only works on SNOW! added it into mountain as unique
 sawmill_01_snow,INDUSTRIAL,0,-1,75,28,100,mountain;unique
 
 school_01,DOWNTOWN;RESIDENTIALNEW,0,-1,100,17,75,smalltown
@@ -373,11 +373,11 @@ settlement_trader_05,TRADER,2,-8,45,28,49,mountain;unique
 // sign_spillway_lake,NAVONLY,2,0,
 // sign_stop,NAVONLY,2,0,
 // sign_stop_4way,NAVONLY,2,0,
-skate_park_01,COMMERCIAL,2,-4,44,16,44,citycenter;unique
-skyscraper_01,DOWNTOWN,2,-1,93,134,87,citycenter;unique
-skyscraper_02,DOWNTOWN,2,-1,47,66,76,citycenter;unique
-skyscraper_03,DOWNTOWN,2,-1,70,78,62,citycenter;unique
-skyscraper_04,DOWNTOWN,2,-1,54,59,40,citycenter;unique
+skate_park_01,COMMERCIAL,2,-4,44,16,44,citycenter
+skyscraper_01,DOWNTOWN,2,-1,93,134,87,citycenter
+skyscraper_02,DOWNTOWN,2,-1,47,66,76,citycenter
+skyscraper_03,DOWNTOWN,2,-1,70,78,62,citycenter
+skyscraper_04,DOWNTOWN,2,-1,54,59,40,citycenter
 snowy_ski_lodge,COMMERCIAL,2,0,39,24,30,mountain
 store_autoparts_01,COMMERCIAL,2,-1,60,13,46,smalltown;downtown
 store_bank_lg_01,COMMERCIAL,2,-1,44,12,44,smalltown;downtown
@@ -418,7 +418,7 @@ survivor_site_05,NOZONE,0,-1,25,17,25,alone;mountain
 survivor_site_06,NOZONE,0,-4,25,20,25,alone;mountain
 survivor_site_07,NOZONE,0,-1,25,16,25,alone;mountain
 survivor_site_08,NOZONE,0,-1,25,23,25,alone;mountain
-theater_01,COMMERCIAL;DOWNTOWN,2,0,39,23,44,citycenter
+theater_01,COMMERCIAL;DOWNTOWN,2,0,39,23,44,citycenter;unique
 trailer_01,RESIDENTIALOLD,2,-1,30,6,30,hillbillytrailer
 trailer_02,RESIDENTIALOLD,2,-1,30,10,30,hillbillytrailer
 trailer_03,RESIDENTIALOLD,2,-1,30,7,30,hillbillytrailer
@@ -502,6 +502,16 @@ resource_iron_pile,BiomeOnly,2,0,3,1,3,alone;mountain;smalltown;hillbillyjunk
 resource_lead_pile,BiomeOnly,0,0,4,2,5,alone;mountain;hillbillyjunk;hillbillytrailer 
 resource_nitrate_pile,BiomeOnly,0,0,4,2,5,alone;mountain;farm
 resource_oilshale_pile,BiomeOnly,0,0,4,2,5,alone;hillbillyjunk;oldwest
+resource_coal_pile,BiomeOnly,0,0,4,2,5,alone;mountain;hillbillyjunk
+resource_iron_pile,BiomeOnly,2,0,3,1,3,alone;mountain;smalltown;hillbillyjunk
+resource_lead_pile,BiomeOnly,0,0,4,2,5,alone;mountain;hillbillyjunk;hillbillytrailer 
+resource_nitrate_pile,BiomeOnly,0,0,4,2,5,alone;mountain;farm
+resource_oilshale_pile,BiomeOnly,0,0,4,2,5,alone;hillbillyjunk;oldwest
+resource_coal_pile,BiomeOnly,0,0,4,2,5,alone;mountain;hillbillyjunk
+resource_iron_pile,BiomeOnly,2,0,3,1,3,alone;mountain;smalltown;hillbillyjunk
+resource_lead_pile,BiomeOnly,0,0,4,2,5,alone;mountain;hillbillyjunk;hillbillytrailer 
+resource_nitrate_pile,BiomeOnly,0,0,4,2,5,alone;mountain;farm
+resource_oilshale_pile,BiomeOnly,0,0,4,2,5,alone;hillbillyjunk;oldwest
 
 resource_plutonium_pile,BiomeOnly,2,0,5,2,5,alone;mountain
 resource_titanium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
@@ -515,14 +525,22 @@ resource_uranium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
 resource_plutonium_pile,BiomeOnly,2,0,5,2,5,alone;mountain
 resource_titanium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
 resource_uranium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
+resource_plutonium_pile,BiomeOnly,2,0,5,2,5,alone;mountain
+resource_titanium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
+resource_uranium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
+resource_plutonium_pile,BiomeOnly,2,0,5,2,5,alone;mountain
+resource_titanium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
+resource_uranium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
 
-DFalls_DestroyedTrader_01,BiomeOnly,2,-1,37,24,37,alone;mountain
-DFalls_DestroyedTrader_02,BiomeOnly,2,-1,35,32,35,alone;mountain
-DFalls_DestroyedTrader_03,BiomeOnly,2,-1,43,24,41,alone;mountain
-DFalls_DestroyedTrader_04,BiomeOnly,2,-1,41,24,46,alone;mountain
-DFalls_DestroyedTrader_05,BiomeOnly,2,-8,45,28,49,alone;mountain
+DFalls_DestroyedTrader_01,BiomeOnly,2,-1,37,24,37,alone;mountain;unique
+DFalls_DestroyedTrader_02,BiomeOnly,2,-1,35,32,35,alone;mountain,unique
+DFalls_DestroyedTrader_03,BiomeOnly,2,-1,43,24,41,alone;mountain;unique
+DFalls_DestroyedTrader_04,BiomeOnly,2,-1,41,24,46,alone;mountain;unique
+DFalls_DestroyedTrader_05,BiomeOnly,2,-8,45,28,49,alone;mountain;unique
 
 DFalls_settlement_trader,Any,2,-1,38,22,38,trader
+DFalls_settlement_trader,Any,2,-1,38,22,38,trader
+
 DFalls_Military_Bunker,Any,2,-12,29,17,34,alone;mountain
 DFalls_Resarch_Lab1,Any,2,-34,45,41,40,mountain;unique
 
