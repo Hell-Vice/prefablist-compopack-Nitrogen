@@ -457,6 +457,9 @@ water_tower_01,INDUSTRIAL,2,0,7,13,8,smalltown;hillbillyjunk;industrial
 water_tower_02,INDUSTRIAL,2,0,10,15,13,smalltown;hillbillyjunk;industrial
 water_tower_03,RESIDENTIALOLD;RESIDENTIALNEW;industrial,2,-1,10,15,13,farm;smalltown
 
+// Darkness Falls specials
+
+//ressources a bit zoned and quite a lot for "correct spawn" still less than DF maps
 resource_coal_pile,BiomeOnly,0,0,4,2,5,alone;mountain;hillbillyjunk
 resource_iron_pile,BiomeOnly,2,0,3,1,3,alone;mountain;smalltown;hillbillyjunk
 resource_lead_pile,BiomeOnly,0,0,4,2,5,alone;mountain;hillbillyjunk;hillbillytrailer 
@@ -532,16 +535,21 @@ resource_plutonium_pile,BiomeOnly,2,0,5,2,5,alone;mountain
 resource_titanium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
 resource_uranium_pile,BiomeOnly,2,0,4,2,5,alone;mountain
 
-DFalls_DestroyedTrader_01,BiomeOnly,2,-1,37,24,37,alone;mountain;unique
-DFalls_DestroyedTrader_02,BiomeOnly,2,-1,35,32,35,alone;mountain,unique
-DFalls_DestroyedTrader_03,BiomeOnly,2,-1,43,24,41,alone;mountain;unique
-DFalls_DestroyedTrader_04,BiomeOnly,2,-1,41,24,46,alone;mountain;unique
-DFalls_DestroyedTrader_05,BiomeOnly,2,-8,45,28,49,alone;mountain;unique
+DFalls_DestroyedTrader_01,BiomeOnly,2,-1,37,24,37,alone;unique
+
+//csv error by nitrogen on this one don't know why so i uncommented it
+//DFalls_DestroyedTrader_02,BiomeOnly,2,-1,35,32,35,alone,unique 
+
+DFalls_DestroyedTrader_03,BiomeOnly,2,-1,43,24,41,alone;unique
+DFalls_DestroyedTrader_04,BiomeOnly,2,-1,41,24,46,alone;unique
+DFalls_DestroyedTrader_05,BiomeOnly,2,-8,45,28,49,mountain;unique
 
 DFalls_settlement_trader,Any,2,-1,38,22,38,trader
 
 DFalls_Military_Bunker,Any,2,-12,29,17,34,alone;mountain;unique
 DFalls_Resarch_Lab1,Any,2,-34,45,41,40,mountain;unique
+
+//Compopack POIs
 
 xcostum_3BlockStores(by_Leo_Liuos),RESIDENTIALOLD,0,-1,44,47,37,smalltown;downtown;unique
 xcostum_Alms_house(ex_vanilla_ornate03),DOWNTOWN;RESIDENTIALNEW;RESIDENTIALOLD,1,-1,27,15,44,smalltown;houses
