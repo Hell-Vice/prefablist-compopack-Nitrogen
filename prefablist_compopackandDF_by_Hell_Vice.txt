@@ -539,9 +539,8 @@ DFalls_DestroyedTrader_04,BiomeOnly,2,-1,41,24,46,alone;mountain;unique
 DFalls_DestroyedTrader_05,BiomeOnly,2,-8,45,28,49,alone;mountain;unique
 
 DFalls_settlement_trader,Any,2,-1,38,22,38,trader
-DFalls_settlement_trader,Any,2,-1,38,22,38,trader
 
-DFalls_Military_Bunker,Any,2,-12,29,17,34,alone;mountain
+DFalls_Military_Bunker,Any,2,-12,29,17,34,alone;mountain;unique
 DFalls_Resarch_Lab1,Any,2,-34,45,41,40,mountain;unique
 
 xcostum_3BlockStores(by_Leo_Liuos),RESIDENTIALOLD,0,-1,44,47,37,smalltown;downtown;unique
