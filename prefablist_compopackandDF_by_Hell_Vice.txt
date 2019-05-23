@@ -18,6 +18,10 @@
 
 //several POIs are uncommented, as they are either very specific navezgane handplaced POIs or would require more complex pacement logic in specific locations
 
+
+//I've mostly changed zoning and placement on vanilla some rotation values too, put theater_01, warehouse_01 and sawmill_01_snow as unique
+// cos first two are empty and op and sawmill is very specific and is better on snow (mountain here you can hope :p or custom biome)
+
 abandoned_house_01,RESIDENTIALOLD,2,-1,24,21,26,houses
 abandoned_house_02,RESIDENTIALOLD,2,-1,24,17,25,houses
 abandoned_house_03,RESIDENTIALOLD,2,-1,21,16,28,houses
@@ -161,8 +165,8 @@ houseburnt2,RESIDENTIALOLD,2,-3,16,14,21,houses
 houseburnt3,RESIDENTIALOLD,2,0,15,17,22,houses
 houseburnt3b,RESIDENTIALOLD,2,0,15,17,22,houses
 houseburnt5,RESIDENTIALOLD,2,0,15,11,15,houses
-//houseburnt_deco1,BIOMEONLY,0,0,8,10,7,houses
-//houseburnt_deco2,BIOMEONLY,0,0,6,7,8,houses
+houseburnt_deco1,BIOMEONLY,0,0,8,10,7,houses
+houseburnt_deco2,BIOMEONLY,0,0,6,7,8,houses
 house_construction_01,RESIDENTIALNEW,2,-5,32,21,46,houses
 house_construction_02,RESIDENTIALNEW,2,-6,28,17,53,houses
 house_modern_01,RESIDENTIALNEW,0,-1,37,20,47,houses
@@ -274,9 +278,10 @@ mp_waste_bldg_governer_08,DOWNTOWN,3,0,28,15,46,houses;citycenter
 //mp_waste_hole_rock_01,NAVONLY,2,0,
 //mp_waste_pile_01,BIOMEONLY,2,0,
 //mp_waste_pile_02,BIOMEONLY,2,0,
-//mp_waste_pile_03,BIOMEONLY,0,0,4,3,4,houses
-//mp_waste_pile_04,BIOMEONLY,0,0,7,15,7,houses
-//mp_waste_pile_05,BIOMEONLY,0,0,9,4,9,houses
+
+mp_waste_pile_03,BIOMEONLY,0,0,4,3,4,houses
+mp_waste_pile_04,BIOMEONLY,0,0,7,15,7,houses
+mp_waste_pile_05,BIOMEONLY,0,0,9,4,9,houses
 
 mp_waste_sewer_hole_1,COMMERCIAL,0,-10,33,32,31,houses;industrial
 mp_waste_sewer_hole_2,NAVONLY,0,-10,25,11,23,houses;industrial
@@ -348,6 +353,7 @@ settlement_trader_01,TRADER,2,-1,37,24,37,trader
 settlement_trader_02,TRADER,2,-1,35,32,35,trader
 settlement_trader_03,TRADER,2,-1,43,24,41,trader
 settlement_trader_04,TRADER,2,-1,41,24,46,trader
+//put trader 05 on mountain hoping for snow put him twice you still can erase one or both from prefabs.xml
 settlement_trader_05,TRADER,2,-8,45,28,49,mountain;unique
 settlement_trader_05,TRADER,2,-8,45,28,49,mountain;unique
 // sign_260_east_speed_65,NAVONLY,2,0,
@@ -442,7 +448,7 @@ vacant_lot_02,ANY,0,-1,23,13,30,hillbillyjunk;citycenter
 vacant_lot_03,ANY,0,-1,23,13,30,hillbillyjunk;industrial
 vacant_lot_04,ANY,0,-1,16,4,30,hillbillyjunk;industrial
 vacant_lot_05,ANY,0,-1,27,4,41,hillbillyjunk;industrial
-//warehouse_01,NONE,0,0,29,12,55,industrial
+warehouse_01,NONE,0,0,29,12,55,industrial;unique
 waste_rubble_bldg_01,DOWNTOWN;COMMERCIAL;INDUSTRIAL,0,0,6,11,6,industrial
 waste_rubble_bldg_02,DOWNTOWN;COMMERCIAL;INDUSTRIAL,0,0,9,10,10,industrial
 waste_rubble_bldg_03,DOWNTOWN;COMMERCIAL;INDUSTRIAL,0,0,7,9,9,industrial
@@ -549,7 +555,7 @@ DFalls_settlement_trader,Any,2,-1,38,22,38,trader
 DFalls_Military_Bunker,Any,2,-12,29,17,34,alone;mountain;unique
 DFalls_Resarch_Lab1,Any,2,-34,45,41,40,mountain;unique
 
-//Compopack POIs
+//Compopack POIs all working on Darkness Falls 
 
 xcostum_3BlockStores(by_Leo_Liuos),RESIDENTIALOLD,0,-1,44,47,37,smalltown;downtown;unique
 xcostum_Alms_house(ex_vanilla_ornate03),DOWNTOWN;RESIDENTIALNEW;RESIDENTIALOLD,1,-1,27,15,44,smalltown;houses
@@ -691,7 +697,7 @@ xcostum_MultiStore(by_ANT),NONE,0,-1,45,26,45,downtown;smalltown;unique
 xcostum_Multi_Storey(by_War3zuk),NONE,2,-7,33,20,33,downtown;smalltown
 xcostum_myhouse(by_magoli),NONE,3,-4,21,26,25,houses 
 xcostum_nationalparkLodge(by_Laz_Man),NONE,0,-1,40,18,26,alone;mountain
-//xcostum_nepa_base(by_Eihwaz),Industrial;ResidentialNew;ResidentialOld;Residential,0,-1,26,20,25,citycenter;smalltown;downtown;alone 
+xcostum_nepa_base(by_Eihwaz),Industrial;ResidentialNew;ResidentialOld;Residential,0,-1,26,20,25,smalltown;alone;unique 
 xcostum_Nicehouse(by_BigC90210),NONE,2,-5,38,13,31,smalltown;houses 
 xcostum_NotreDamn_(by_tehkarma),INDUSTRIAL,1,-9,105,51,39,citycenter;unique
 xcostum_NSiteMissileSilo(byEphoie),Industrial,1,-34,53,42,63,mountain;unique
@@ -710,7 +716,7 @@ xcostum_pistol_gunshop(by_magoli),NONE,2,-9,32,29,16,downtown;unique
 xcostum_Plant(by_Wsiegel),INDUSTRIAL,0,-22,40,29,44,alone;industrial;unique
 xcostum_Polarstation(by_magoli),NONE,2,-5,91,19,60,mountain;unique 
 xcostum_powerplant(byKam),INDUSTRIAL,2,-7,152,71,103,industrial;unique
-//xcostum_Power_Station(by_LuckyStar),NONE,0,-9,20,24,20,alone 
+xcostum_Power_Station(by_LuckyStar),NONE,0,-9,20,24,20,alone;unique 
 xcostum_Prison(by_Limodur),COMMERCIAL;RESIDENTIALNEW,3,-8,132,26,69,alone;unique
 xcostum_Prison1(by_Curbolt),NONE,2,0,41,12,45,alone
 xcostum_Public_Pool(by_Warsaken),NONE,1,-10,72,19,53,citycenter;smalltown;unique
@@ -721,6 +727,8 @@ xcostum_Recycling(by_Limodor),INDUSTRIAL,0,-1,82,22,47,industrial;unique
 xcostum_RedCatDiner(by_Najax),NONE,0,-1,40,10,41,smalltown;downtown 
 xcostum_Redhouse(by_Tom),NONE,1,-1,46,23,48,houses 
 xcostum_ResidentEvilMansion(by_magoli),NONE,2,-9,85,29,47,houses;unique
+
+//uncommented for biome issues you can recomment if you want it's desert texture 
 //xcostum_RestArea_Desert(by_Guppycur),COMMERCIAL;DOWNTOWN;INDUSTRIAL;RESIDENTIALNEW;RESIDENTIALOLD,0,-10,52,17,30,alone;smalltown;industrial
 xcostum_Restaurant(by_Gertle),NONE,2,-5,20,14,20,smalltown;downtown  
 xcostum_RocketLaunchPad(by_Saeid),NONE,1,-10,40,52,55,alone;unique
@@ -773,7 +781,7 @@ xcostum_Trailerhousemix04(by_SandyBeaches),RESIDENTIALOLD,1,-5,39,22,40,smalltow
 xcostum_TruckStop(by_magoli),NONE,2,-1,45,9,45,smalltown;unique
 xcostum_TruckStop_Garage(by_stallionsden),NONE,1,-5,45,13,45,downtown;unique
 xcostum_TruckStop_Roadhouse(by_stallionsden),NONE,1,-5,45,13,45,smalltown;unique 
-//xcostum_tv_store(by_magoli),NONE,1,-5,21,18,20,smalltown;downtown;unique   
+xcostum_tv_store(by_magoli),NONE,1,-5,21,18,20,smalltown;downtown;unique   
 xcostum_TV_Tower_Restaurant(by_magoli),COMMERCIAL;DOWNTOWN;INDUSTRIAL,2,-5,45,82,45,alone
 xcostum_UnionStation(by_BuLLeTZ),RESIDENTIALNEW,3,-10,45,22,45,citycenter;unique
 xcostum_Utility_Combo(by_LuckyStar),INDUSTRIAL,1,-13,45,43,45,industrial
